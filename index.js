@@ -121,7 +121,7 @@ async function run() {
 
         });
 
-        // doctors api
+        // doctors apis
         app.get('/doctors', async (req, res) => {
             const cursor = doctorsCollection.find({});
             const doctors = await cursor.toArray();
